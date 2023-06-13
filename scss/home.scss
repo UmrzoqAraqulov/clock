@@ -1,0 +1,124 @@
+@import "global";
+
+.box {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgba(33, 63, 138, 0.922), rgba(45, 110, 167, 0.925), rgba(65, 20, 85, 0.884)), url(../img/bcg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .phone {
+    width: 380px;
+    height: 550px;
+    background: black;
+    border-radius: 20px;
+    padding: 12px;
+
+    @media (max-width:400px) {
+      width: 260px;
+      height: 450px;
+    }
+
+    .menu {
+      
+      width: 100%;
+      height: 100%;
+      background:linear-gradient(150deg, rgba(33, 63, 138, 0.922), rgba(45, 110, 167, 0.925), rgba(20, 32, 85, 0.884)),
+      url(../img/iphone.jpg);
+      background-size: auto 100%;
+      background-position: center;
+      border-radius: 10px;
+      display: flex;
+      padding: 50px;
+
+      @media (max-width:400px) {
+        padding: 10px;
+      }
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .clock, .alarm , .taymer, .stringMetods{
+        width: 47%;
+        height: 160px;
+        text-align: center;
+        overflow: hidden;
+        background: transparent;
+        transition: 0.5s;
+
+        h3 {
+          color: white;
+          padding-bottom: 5px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .clock {
+
+        img {
+          width: 100%;
+          height: 80%;
+          border-radius: 50%;
+
+        }
+      }
+
+      .alarm {
+        border-radius: 50%;
+
+        img {
+          border-radius: 50%;
+          width: 160px;
+          height: 80%;
+        }
+      }
+
+      .taymer {
+        border-radius: 20%;
+
+        img {
+          width: 200px;
+          transform: translate(-19%);
+          height: 80%;
+          border-radius: 50%;
+        }
+      }
+
+      .stringMetods {
+        border-radius: 0px 0px 80px 100px;
+
+        img {
+          width: 100%;
+          border-radius: 20px 30px 40px 50px;
+        }
+      }
+    }
+
+    position: relative;
+
+    .camera {
+      position: absolute;
+      top: 15px;
+      right: 50%;
+      background: black;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .circle {
+        width: 8px;
+        height: 8px;
+        background: rgb(99, 92, 92);
+        border-radius: 50%;
+      }
+    }
+  }
+}

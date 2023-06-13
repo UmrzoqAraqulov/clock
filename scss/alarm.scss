@@ -1,0 +1,52 @@
+.box .phone .alarm {
+  h2{
+    color: white;
+    font-size: 60px;
+    padding: 20px 0px;
+  }
+  .time {
+    padding: 3px 10px;
+    font-size: 60px;
+    color: green;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+  }
+
+  flex-direction: column;
+
+  .set {
+    display: flex;
+    gap: 10px;
+    padding: 30px 0px;
+    button {
+      border: none;
+      padding: 8px 20px;
+      color: white;
+      background: green;
+      font-size: 30px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .stop {
+      background: red;
+    }
+    
+  }
+    @media (max-width: 400px) {
+      h2 {
+        font-size: 40px;
+        padding: 10px;
+      }
+      .time {
+        font-size: 40px;
+      }
+  
+      .set {
+        padding: 10px;
+        button {
+          font-size: 22px;
+        }
+      }
+    }
+}

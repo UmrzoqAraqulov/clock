@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.min.css">
+    <link rel="stylesheet" href="css/taymer.min.css">
+    <title>Taymer</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="phone">
+            <div class="camera">
+                <div class="circle"></div>
+            </div>
+            <div class="menu taymer">
+                <div class="set">
+                    <div class="minuts">
+                        <label for="minut">Minut</label>
+                        <select name="minut" id="minut"></select>
+                    </div>
+                    <div class="secunds">
+                        <label for="secund">Secund</label>
+                        <select name="secund" id="secund">
+
+                        </select>
+                    </div>
+                </div>
+                <div class="setting">
+                    <button class="taymerStart" onclick="start()">
+                        Start
+                    </button>
+                    <button class="taymerStop" onclick="stop()">
+                        Stop
+                    </button>
+                    <button class="taymerReset" onclick="reset()">
+                        Reset
+                    </button>
+                </div>
+                <audio class="taymerMusic"
+                    src="audio/Digital Clock or Timer Alarm Beep Version 1 - Digiffects Sou.m4a"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/taymer.js"></script>
+</body>
+
+</html>

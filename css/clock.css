@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+}
+@media (max-width: 1300px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgba(33, 63, 138, 0.922), rgba(45, 110, 167, 0.925), rgba(65, 20, 85, 0.884)), url(../img/bcg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .phone {
+  width: 600px;
+  height: 380px;
+  background: black;
+  border-radius: 20px;
+  padding: 12px;
+  position: relative;
+}
+@media (max-width: 400px) {
+  .box .phone {
+    width: 260px;
+    height: 450px;
+  }
+}
+.box .phone .menu {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(150deg, rgba(33, 63, 138, 0.922), rgba(45, 110, 167, 0.925), rgba(20, 32, 85, 0.884)), url(../img/iphone.jpg);
+  background-size: auto 100%;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  padding: 50px;
+}
+@media (max-width: 400px) {
+  .box .phone .menu {
+    padding: 10px;
+  }
+}
+.box .phone .camera {
+  position: absolute;
+  top: 15px;
+  right: 50%;
+  background: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .phone .camera .circle {
+  width: 8px;
+  height: 8px;
+  background: rgb(99, 92, 92);
+  border-radius: 50%;
+}
+
+.box .phone .clock {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box .phone .clock .date {
+  font-size: 26px;
+  color: rgb(245, 241, 7);
+  font-weight: bold;
+}
+.box .phone .clock .clockTime {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.box .phone .clock .clockTime .hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.box .phone .clock .clockTime .hours h3 {
+  font-size: 30px;
+  color: white;
+}
+.box .phone .clock .clockTime .hours p {
+  background: rgba(255, 255, 255, 0.614);
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 24px;
+  color: rgb(4, 81, 111);
+  font-weight: 700;
+  color: rgb(6, 151, 6);
+}
